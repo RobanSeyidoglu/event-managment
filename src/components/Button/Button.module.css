@@ -1,0 +1,8 @@
+.Button {
+  @apply bg-[#484848]
+  px-2 lg:px-5 py-1
+  mx-1
+  text-xs md:text-sm  
+  shadow-md
+  text-[#f1c232];
+}
