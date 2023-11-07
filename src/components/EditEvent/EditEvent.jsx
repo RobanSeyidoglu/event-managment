@@ -2,7 +2,7 @@ import { useContext, useRef, useState } from "react";
 
 import Datepicker from "../DatePicker/DatePicker";
 import Button from "../Button/Button";
-import { TasksContext } from "../../context/tasksContext";
+import { TasksContext } from "../../context/EventsContext";
 
 import styles from "./EditTask.module.css";
 
