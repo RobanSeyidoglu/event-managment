@@ -1,0 +1,15 @@
+.Events {
+  @apply bg-[#212121]
+  flex flex-col 
+  my-5 p-5 xl:px-20  
+  shadow-lg;
+}
+
+.EventsHeader {
+  @apply text-sm
+  italic
+  font-semibold
+  text-[#bf9000]
+  pb-5
+  capitalize;
+}
