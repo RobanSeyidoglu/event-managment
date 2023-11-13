@@ -1,8 +1,0 @@
-.App {
-    @apply m-auto;
-  }
-  
-  .TaskContent {
-    @apply flex flex-row;
-  }
-  
