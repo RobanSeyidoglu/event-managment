@@ -1,0 +1,21 @@
+.EmptyEventWrapper {
+  @apply italic
+  text-[#616161]
+  text-xs
+  mx-auto
+  sm:text-base
+  text-center
+  flex justify-center;
+}
+
+.NoIncompleteTasks {
+  @apply text-[#f1c232]
+  sm:text-base
+  text-xs
+  py-5
+  italic;
+}
+
+.NoTasks {
+  @apply pt-10;
+}
