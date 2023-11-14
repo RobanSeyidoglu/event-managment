@@ -1,0 +1,46 @@
+.EventListsMenu {
+  @apply flex justify-around items-center md:items-start
+  flex-col 
+  min-h-fit
+  lg:fixed
+  text-[#bf9000];
+}
+
+.EventList {
+  @apply flex gap-1 flex-wrap items-center 
+  p-1
+  cursor-pointer
+  lg:text-sm
+  text-xs
+  opacity-80
+  hover:text-[#f1c232];
+}
+
+.Icon {
+  @apply cursor-pointer
+  md:m-1
+  text-[#e7e8ed]
+  hover:text-[#f1c232]
+  md:hover:text-[#e7e8ed]
+  w-[25px] py-1 md:py-0
+  md:w-[20px];
+}
+
+.Selected {
+  @apply text-[#f1c232]
+  font-semibold;
+}
+
+.EventLabel,
+.EventCompletion {
+  @apply hidden md:block;
+}
+
+.EventCompletion {
+  @apply p-px;
+}
+
+.Overdue,
+.Important {
+  @apply text-[#f02828];
+}
