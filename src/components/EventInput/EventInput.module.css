@@ -1,0 +1,32 @@
+.InputArea {
+  @apply w-full
+  mt-[30px]
+  px-1
+  flex items-center
+  bg-[#212121]
+  flex justify-center
+  shadow-lg;
+}
+
+.TaskInput {
+  @apply flex
+  px-1 mx-1
+  md:w-3/4
+  w-3/4
+  text-xs md:text-sm lg:text-base
+  text-[#e7e8ed] 
+  bg-transparent
+  placeholder:text-[#aaaaaa]
+  border-b border-[#d4d4d4]
+  focus:outline-none;
+}
+
+.AddButton {
+  @apply text-[#ededed]
+  hover:text-[#e7e8ed]
+  mt-[3px]
+  cursor-pointer
+  hover:bg-[#3a3b3c]
+  rounded-full
+  p-[5px];
+}
