@@ -1,0 +1,13 @@
+.Events {
+  @apply flex flex-col 
+  my-5 p-5 xl:px-20;
+}
+
+.NoTaskMessage {
+  @apply text-[#aaaaaa]
+  md:text-base
+  text-xs
+  m-auto
+  py-5
+  italic;
+}
