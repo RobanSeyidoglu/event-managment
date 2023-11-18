@@ -1,0 +1,19 @@
+.SearchWrapper {
+  @apply flex items-center
+  p-1;
+}
+
+.SearchIcon {
+  @apply mr-[-25px] pb-px
+  text-[#e7e8ed];
+}
+
+.SearchInput {
+  @apply text-xs md:text-sm
+  pl-7 pb-px
+  text-[#e7e8ed]  
+  bg-transparent
+  placeholder:text-[#bbbbbb]
+  border-b border-[#d4d4d4]
+  focus:outline-none;
+}
