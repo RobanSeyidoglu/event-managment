@@ -1,0 +1,7 @@
+.App {
+  @apply m-auto;
+}
+
+.EventContent {
+  @apply flex flex-row;
+}

@@ -1,18 +1,18 @@
 import { useState } from "react";
 
-import { TasksProvider } from "./context/tasksContext.jsx";
+import { EventsProvider } from "./context/eventsContext.jsx";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
-import TaskBoard from "./components/TaskBoard/TaskBoard";
+import EventBoard from "./components/EventBoard/EventBoard.jsx";
 
 import styles from "./App.module.css";
 
 const App = () => {
     const [selectedList, setSelectedList] = useState("inbox");
-    const [searchedTask, setSearchedTask] = useState("");
+    const [searchedEvent, setSearchedEvent] = useState("");
     const [isSidebarHidden, setIsSidebarHidden] = useState(false);
 
-    const taskLists = [
+    const eventLists = [
         { value: "noDate", label: "" },
         { value: "inbox", label: "Inbox", icon: "inbox" },
         { value: "important", label: "Important", icon: "important" },
@@ -28,30 +28,30 @@ const App = () => {
     ];
 
     return (
-        <TasksProvider>
+        <EventsProvider>
             <div className={styles.App}>
                 <Header
                     selectedList={selectedList}
                     setSelectedList={setSelectedList}
-                    searchedTask={searchedTask}
-                    setSearchedTask={setSearchedTask}
+                    searchedEvent={searchedEvent}
+                    setSearchedEvent={setSearchedEvent}
                     toggleSidebar={() => setIsSidebarHidden(!isSidebarHidden)}
                 />
-                <div className={styles.TaskContent}>
+                <div className={styles.EventContent}>
                     <Sidebar
                         isSidebarHidden={isSidebarHidden}
-                        taskLists={taskLists}
+                        eventLists={eventLists}
                         selectedList={selectedList}
                         setSelectedList={setSelectedList}
                     />
-                    <TaskBoard
-                        taskLists={taskLists}
+                    <EventBoard
+                        eventLists={eventLists}
                         selectedList={selectedList}
-                        searchedTask={searchedTask}
+                        searchedEvent={searchedEvent}
                     />
                 </div>
             </div>
-        </TasksProvider>
+        </EventsProvider>
     );
 };
 
